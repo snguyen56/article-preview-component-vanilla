@@ -18,9 +18,31 @@ html {
   font-size: 13px;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-grayish-blue);
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+}
+
 .attribution {
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    margin-top: 74px;
+    margin-bottom: 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 512px;
+    width: 326px;
+  }
 }
