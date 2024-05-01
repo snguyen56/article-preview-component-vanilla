@@ -28,6 +28,7 @@ section {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 3px 20px var(--grayish-blue);
 }
 
 .article-img {
@@ -37,6 +38,7 @@ section {
 
 div img {
   object-fit: cover;
+  object-position: 50% 25%;
   height: inherit;
   width: inherit;
 }
