@@ -16,7 +16,6 @@
 html {
   font-family: "Manrope";
   font-size: 13px;
-  font-weight: 500;
 }
 
 body {
@@ -73,6 +72,20 @@ p {
 
 .footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin: 0;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--light-grayish-blue);
+  border-style: none;
 }
 
 .attribution {
