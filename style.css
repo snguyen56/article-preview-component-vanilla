@@ -73,6 +73,7 @@ p {
 }
 
 .footer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,6 +92,27 @@ button {
   background-color: var(--light-grayish-blue);
   border-style: none;
   cursor: pointer;
+  z-index: 3;
+}
+
+.footer.active button,
+button:hover {
+  background-color: var(--desaturated-dark-blue);
+}
+
+button div {
+  position: relative;
+}
+
+#active-icon {
+  position: absolute;
+  left: 20%;
+  visibility: hidden;
+}
+
+.footer.active button #active-icon,
+button:hover #active-icon {
+  visibility: visible;
 }
 
 .author-info {
@@ -101,6 +123,39 @@ button {
 .author-info img {
   width: 40px;
   border-radius: 100%;
+}
+
+h2 {
+  color: var(--grayish-blue);
+  font-size: 13px;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+.share-links {
+  position: absolute;
+  background-color: var(--very-dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  width: 327px;
+  left: -32px;
+  height: 64px;
+  padding-left: 32px;
+  visibility: hidden;
+}
+
+.footer.active .share-links {
+  visibility: visible;
+}
+
+.share-links img {
+  width: 20px;
+  height: 20px;
+}
+.share-links img.twitter {
+  width: 17px;
+  height: 17px;
 }
 
 .attribution {
@@ -119,4 +174,8 @@ button {
     height: 512px;
     width: 327px;
   }
+  /* remove 8px when active state is toggled to fit image preview instead
+   section.active {
+    height: 504px;
+  } */
 }
