@@ -179,3 +179,43 @@ h2 {
     height: 504px;
   } */
 }
+
+/* Responsive Design 730x280 */
+@media screen and (min-width: 730px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  section {
+    width: 730px;
+    height: 280px;
+    display: flex;
+  }
+
+  .article-img {
+    height: 100%;
+    width: 285px;
+  }
+
+  div img {
+    object-fit: cover;
+    object-position: 0% 25%;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+  }
+
+  .text-content {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  .footer {
+    margin-top: 18px;
+    padding-right: 10px;
+  }
+}
