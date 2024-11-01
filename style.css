@@ -164,7 +164,7 @@ h2 {
   height: 20px;
 }
 .share-links img.twitter {
-  width: 17px;
+  width: 20px;
   height: 17px;
 }
 
@@ -249,10 +249,5 @@ h2 {
     height: 20px;
     top: 75%;
     rotate: 45deg;
-  }
-
-  .share-links img.twitter {
-    width: 20px;
-    height: 17px;
   }
 }
