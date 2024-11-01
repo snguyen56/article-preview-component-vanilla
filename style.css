@@ -174,13 +174,13 @@ h2 {
     height: 512px;
     width: 327px;
   }
-  /* remove 8px when active state is toggled to fit image preview instead
-   section.active {
+
+  section.active {
     height: 504px;
-  } */
+  }
 }
 
-/* Responsive Design 730x280 */
+/* Desktop Design */
 @media screen and (min-width: 730px) {
   body {
     display: grid;
