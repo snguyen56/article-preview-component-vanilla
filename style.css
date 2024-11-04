@@ -25,6 +25,7 @@ body {
 }
 
 section {
+  position: relative;
   background-color: white;
   border-radius: 10px;
   margin-top: 74px;
@@ -33,7 +34,8 @@ section {
   margin-right: 24px;
   height: 512px;
   width: 327px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: clip;
   box-shadow: 0px 3px 20px var(--grayish-blue);
 }
 
@@ -171,8 +173,8 @@ h2 {
 
 .attribution {
   text-align: center;
-  position: relative;
-  top: -50px;
+  position: fixed;
+  top: 600px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -198,6 +200,7 @@ h2 {
     width: 730px;
     height: 280px;
     display: flex;
+    justify-content: center;
     overflow: visible;
   }
 
@@ -256,6 +259,7 @@ h2 {
   }
 
   .attribution {
-    top: -225px;
+    position: absolute;
+    top: 300px;
   }
 }
