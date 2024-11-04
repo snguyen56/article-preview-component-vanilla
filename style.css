@@ -171,6 +171,8 @@ h2 {
 
 .attribution {
   text-align: center;
+  position: relative;
+  top: -50px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -251,5 +253,9 @@ h2 {
     height: 20px;
     top: 75%;
     rotate: 45deg;
+  }
+
+  .attribution {
+    top: -225px;
   }
 }
