@@ -209,9 +209,10 @@ h2 {
     width: 285px;
   }
 
-  div img {
+  div > img {
     object-fit: cover;
     object-position: 0% 25%;
+    border-radius: 10px 0 0 10px;
   }
 
   h1 {
