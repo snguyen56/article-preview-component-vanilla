@@ -163,6 +163,7 @@ h2 {
   width: 20px;
   height: 20px;
 }
+
 .share-links img.twitter {
   width: 20px;
   height: 17px;
@@ -175,6 +176,7 @@ h2 {
   color: hsl(228, 45%, 44%);
 }
 
+/* The mobile previews have different heights, adding this to be accurate to preview images */
 @media screen and (max-width: 729px) {
   section.active {
     height: 504px;
